@@ -2,6 +2,10 @@ const Discord = require('discord.js');
 const Twitter = require('twitter');
 require('dotenv').config();
 
+const express = require('express')
+const app = express()
+const port = 3000
+
 const twitter = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
   consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
@@ -52,3 +56,12 @@ bot.on('error', (error) => {
 
 
 bot.login(process.env.DISCORD_TOKEN);
+
+app.get('*', (req, res) => {
+  return handle(req, res)
+})
+
+app.listen(port, err => {
+  if (err) throw err
+  console.log(`> Web service ready on port ${port}`)
+})
