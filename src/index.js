@@ -33,7 +33,12 @@ bot.on('ready', function () {
     return;
   }
 
-  stream = twitter.stream('statuses/filter', { track: process.env.TWITTER_KEYWORDS });
+  try {
+    stream = twitter.stream('statuses/filter', { track: process.env.TWITTER_KEYWORDS });
+  } catch (e) {
+    console.log(e);
+  }
+
 
   stream.on('data', function (tweet) {
     if (tweet && !tweet.retweeted_status) {
