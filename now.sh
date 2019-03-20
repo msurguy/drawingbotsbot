@@ -6,12 +6,12 @@
     ],
     "env": {
 	    "NODE_ENV": "production",
-	    "DISCORD_TOKEN": "@DISCORD_TOKEN",
-	    "DISCORD_CHANNEL_ID": "@DISCORD_CHANNEL_ID",
-	    "TWITTER_CONSUMER_KEY": "@TWITTER_CONSUMER_KEY",
-	    "TWITTER_CONSUMER_SECRET": "@TWITTER_CONSUMER_SECRET",
-	    "TWITTER_ACCESS_TOKEN_KEY": "@TWITTER_ACCESS_TOKEN_KEY",
-	    "TWITTER_ACCESS_TOKEN_SECRET": "@TWITTER_ACCESS_TOKEN_SECRET",
-	    "TWITTER_KEYWORDS": "@TWITTER_KEYWORDS",
+	    "DISCORD_TOKEN": "@discord_token",
+	    "DISCORD_CHANNEL_ID": "@discord_channel_id",
+	    "TWITTER_CONSUMER_KEY": "@twitter_consumer_key",
+	    "TWITTER_CONSUMER_SECRET": "@twitter_consumer_secret",
+	    "TWITTER_ACCESS_TOKEN_KEY": "@twitter_access_token_key",
+	    "TWITTER_ACCESS_TOKEN_SECRET": "@twitter_access_token_secret",
+	    "TWITTER_KEYWORDS": "@twitter_keywords",
 	  }
 }
